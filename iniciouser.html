@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vita · Iniciouser</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="Vector.png" alt="VITA Logo">
+      </div>
+
+      <nav class="nav">
+        <a href="#" class="nav-item active" data-view="dashboard">
+          <span class="icon">▦</span> Dashboard
+        </a>
+        <a href="index.html" class="nav-item" data-view="sair">
+          <span class="icon">⏻</span> Sair
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main">
+
+      <header class="topbar">
+        <h1>Dashboard User</h1>
+        <div class="user-chip">
+          <a href="perfil.html" class="nav-item" data-view="perfil">
+          <span id="user-name">Carregando...</span>
+          <div class="avatar" id="user-avatar"></div>
+        </a>
+        </div>
+      </header>
+
+      <section class="content">
+
+        <div class="card resumo-card">
+          <div class="card-head">
+            <div>
+              <h2>Resumo de Hoje</h2>
+              <p class="subtitle" id="today-date">--</p>
+            </div>
+            <button class="btn-export" id="btn-export">⭳ Exportar</button>
+          </div>
+
+          <div class="stat-grid" id="stat-grid">
+            <div class="stat-card skeleton"></div>
+            <div class="stat-card skeleton"></div>
+            <div class="stat-card skeleton"></div>
+            <div class="stat-card skeleton"></div>
+          </div>
+        </div>
+
+        <div class="mid-grid">
+
+          <div class="card chart-card">
+            <h2>Calorias Semanais</h2>
+            <div class="chart-wrap"><canvas id="chart-calorias"></canvas></div>
+            <div class="legend" id="legend-calorias"></div>
+          </div>
+
+          <div class="card chart-card">
+            <h2>Progresso de Peso</h2>
+            <div class="chart-wrap"><canvas id="chart-peso"></canvas></div>
+            <div class="legend legend-compare" id="legend-peso"></div>
+          </div>
+
+          <div class="card chart-card">
+            <h2>Hidratação vs Atividade</h2>
+            <div class="chart-wrap"><canvas id="chart-hidratacao"></canvas></div>
+            <div class="legend legend-compare" id="legend-hidratacao"></div>
+          </div>
+
+        </div>
+
+        <div class="bottom-grid">
+
+          <div class="card">
+            <h2>Alimentos Favoritos</h2>
+            <table class="fav-table">
+              <thead>
+                <tr><th>#</th><th>Nome</th><th>Popularidade</th><th>Consumo</th></tr>
+              </thead>
+              <tbody id="fav-table-body">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card pie-card">
+            <h2>Refeições por Tipo</h2>
+            <div class="chart-wrap pie-wrap"><canvas id="chart-refeicoes"></canvas></div>
+            <div class="pie-total">
+              <span id="pie-total-num">--</span>
+              <span class="pie-total-label">refeições</span>
+            </div>
+            <div class="legend legend-pie" id="legend-refeicoes"></div>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="chart.umd.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

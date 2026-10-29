@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vita · Perfil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="profile-page" id="profile-page">
+
+    <button class="profile-back" id="profile-back" aria-label="Voltar">←</button>
+
+    
+    <div class="profile-top">
+      <div class="profile-stats" id="profile-stats">
+      </div>
+
+      <div class="profile-identity">
+        <div class="profile-avatar" id="profile-avatar"></div>
+        <div class="profile-name" id="profile-name">Carregando...</div>
+        <div class="profile-handle" id="profile-handle">&nbsp;</div>
+      </div>
+    </div>
+
+    <div class="card profile-card">
+      <div class="profile-card-head">
+        <h2>Informações pessoais</h2>
+        <button class="profile-link" id="btn-atualizar">Atualizar</button>
+      </div>
+      <div class="info-grid" id="info-grid">
+      </div>
+    </div>
+
+    <div class="card profile-card">
+      <div class="profile-card-head">
+        <div>
+          <h2>Conquistas</h2>
+          <p class="achievements-sub" id="achievements-sub">-- de -- desbloqueadas</p>
+        </div>
+        <button class="profile-link" id="btn-ver-todas">Ver todas</button>
+      </div>
+      <div class="achievements-grid" id="achievements-grid">
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

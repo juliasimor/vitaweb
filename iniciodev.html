@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vita Dev · Painel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dev-page" id="dev-page">
+        <a href="index.html" class="nav-item" data-view="sair">
+          <span class="icon">⏻</span> Sair
+        </a>
+      </nav>
+    </aside>
+
+    <div class="dev-header">
+      <div class="dev-logo-row">
+      <div class="logo">
+        <img src="Vector.png" alt="VITA Logo">
+      </div>
+        <span class="badge-dev">DEV</span>
+      </div>
+       <p class="dev-subtitle">Dashboard de usuários</p>
+    </div>
+
+    <div class="user-select-block">
+      <label class="user-select-label" for="user-select">Selecionar usuário</label>
+      <div class="user-select-wrap">
+        <select class="user-select" id="user-select"></select>
+      </div>
+      <p class="user-id" id="user-id-label">ID: --</p>
+    </div>
+
+    <div class="dev-stat-grid" id="dev-stat-grid">
+      <!-- preenchido via script.js -->
+    </div>
+
+    <div class="card dev-chart-card">
+      <h2>Calorias na semana</h2>
+      <div class="chart-wrap"><canvas id="chart-dev-calorias"></canvas></div>
+    </div>
+
+    <div class="card">
+      <h2>Eventos recentes da API</h2>
+      <div class="events-table-wrap">
+        <table class="events-table">
+          <thead>
+            <tr><th>Hora</th><th>Método</th><th>Endpoint</th><th>Status</th><th></th></tr>
+          </thead>
+          <tbody id="events-table-body">
+            <!-- preenchido via script.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="chart.umd.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

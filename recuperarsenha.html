@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefina sua senha - VITA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script type="module" src="js/script.js"></script>
+    <div class="auth-container-full">
+        <a href="esqueceusenha.html" class="back-arrow" title="Voltar">&larr;</a>
+
+        <div class="auth-card">
+            <img src="Logo.png" alt="VITA Logo" class="auth-logo">
+            <h1 class="auth-title">Redefina sua senha</h1>
+            <p style="color: #a0aec0; font-size: 14px; margin-bottom: 28px;">Digite a sua nova senha no campo abaixo.</p>
+
+            <form class="auth-form" action="#" method="POST">
+                <div class="input-group">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    <input type="password" placeholder="••••••••" required>
+                    <span class="toggle-eye">👁️</span>
+                </div>
+
+                <button type="button" class="btn-full-green" onclick="alert('Senha redefinida com sucesso!'); window.location.href='login.html'">Redefinir senha</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
